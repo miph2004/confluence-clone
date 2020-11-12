@@ -1,15 +1,19 @@
 {
-  "name": "confluence-clone",
+  "name": "testbeditor",
   "version": "0.1.0",
-  "private": true,
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build": "rollup -c"
   },
   "dependencies": {
+    "@bigin/bigin-ui-ds": "^0.0.58",
     "core-js": "^3.6.5",
-    "tiptap": "^1.29.4",
+    "tiptap": "^1.30.0",
     "tiptap-extensions": "^1.33.2",
     "vue": "^2.6.11"
   },
@@ -17,9 +21,11 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "rollup-plugin-vue": "^6.0.0-beta.11",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -40,5 +46,8 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "resolutions": {
+    "prosemirror-model": "1.9.1"
+  }
 }
