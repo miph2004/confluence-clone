@@ -1,4 +1,4 @@
-# confluence-clone
+# Tip tap Editor
 
 ## Project setup
 ```
